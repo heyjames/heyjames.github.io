@@ -14,35 +14,9 @@ image:
 github_url: 'https://github.com/heyjames/eric'
 tags: ["Website"]
 ---
-                                               (main loop, init)
-                                         =============                
-                                        |             |                                    
-                                        |   eric.py   |                                    
-                                        |             |
-                                         ==============                      
-                                               ^                             
-                                               |                             
-                                               v                             
-                 ========================================================== 
-                |                                                          |
-                |                           api.py                         |
-                |                                                          |
-                 ========================================================== 
-                            ^                                 ^                     
-                            |                                 |                     
-                            |                                 |                     
-                            v (I/O layer)                     v (OS control/tools)  
-                 ========================           ======================= 
-                |                        |         |                       |
-                |   legistar_parser.py   |         |   task_scheduler.py   |
-                |                        | <-----> |                       |
-                |   novus_parser.py      |         |   utils.py            |
-                |                        |         |                       |
-                |   pdf_parser.py        |         |   gmail.py            |
-                |                        |         |                       |
-                ========================           |   log.py              |
-                                                   |                       |
-                                                    ======================= 
+<div class="image-container pt pb">
+    <img class="topology" src="/images/eric-topology.png" />
+</div>
 <div class="image-caption-center">Topology</div>
 
 An application running in the background that verifies Zoom registration links included in agenda packets published on meeting management websites.

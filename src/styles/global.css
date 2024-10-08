@@ -25,7 +25,7 @@ body {
     padding: 1rem;
     line-height: 1.5;
 }
-  
+
 * {
     box-sizing: border-box;
 }
@@ -105,8 +105,8 @@ a {
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
 }
 
 .image-caption-center {
@@ -150,6 +150,7 @@ a {
 .projects-col-4 {
     min-width: 310px;
 }
+
 .page-title {
     display: none;
 }
