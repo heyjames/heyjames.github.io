@@ -16,15 +16,15 @@ tags: []
 ---
 <div class="thumbnail-container-space-around pt">
     <div>
-        <img class="thumbnail" src="../../src/whitespace-ip.png" height=250 alt="Double-click highlighting copies trailing white space" />
+        <img class="thumbnail" src="/images/whitespace-ip.png" height=250 alt="Double-click highlighting copies trailing white space" />
         <br>
     </div>
     <div>
-        <img class="thumbnail" src="../../src/before-helper.png" height=250 alt="Before" />
+        <img class="thumbnail" src="/images/before-helper.png" height=250 alt="Before" />
         <div class="image-caption-center">Before</div>
     </div>
     <div>
-        <img class="thumbnail" src="../../src/after-helper-public-dark.png" height=250 alt="After" />
+        <img class="thumbnail" src="/images/after-helper-public-dark.png" height=250 alt="After" />
         <div class="image-caption-center">After</div>
     </div>
 </div>
