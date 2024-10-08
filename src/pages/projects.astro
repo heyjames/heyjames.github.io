@@ -6,7 +6,8 @@ const sortedPosts = allPosts.sort((a, b) => b.frontmatter.id - a.frontmatter.id)
 const pageTitle = "";
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <div class="pt project-posts-container">
+    <h1 class="page-title">Projects</h1>
+    <div class="pt-lg">
     {sortedPosts.map(post => 
         <ProjectPost 
             url={post.url} 

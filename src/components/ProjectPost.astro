@@ -1,9 +1,9 @@
 ---
 const { title, url, dates, type, language } = Astro.props;
 ---
-<div class="cdt">
-    <div class="lc">{dates}</div>
-    <div class="mc">{type}</div>
-    <div class="mc-2">{language}</div>
-    <div class="rc"><a href={url}>{title}</a></div>
+<div class="projects-row">
+    <div class="projects-column projects-col-1">{dates}</div>
+    <div class="projects-column projects-col-2">{type}</div>
+    <div class="projects-column projects-col-3">{language}</div>
+    <div class="projects-column projects-col-4"><a href={url}>{title}</a></div>
 </div>
