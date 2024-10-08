@@ -16,12 +16,12 @@ github_url2: 'https://github.com/heyjames/offlinetv-api'
 tags: ["Website"]
 ---
 <div class="thumbnail-container-space-around pt pb">
-    <img class="thumbnail" src="/images/otvdashboard-dark.png" height=100 alt="otv dashboard dark theme">
+    <img class="thumbnail" src="./otvdashboard-dark.png" height=100 alt="otv dashboard dark theme">
     <img class="thumbnail" src="images/otvdashboard-darker.png" height=100 alt="otv dashboard darker theme">
     <img class="thumbnail" src="./images/otvdashboard-light.png" height=100 alt="otv dashboard light theme">
-    <img class="thumbnail" src="../../src/otvdashboard-syk.png" height=100 alt="otv dashboard syk theme">
-    <img class="thumbnail" src="../../src/otvdashboard-lily.png" height=100 alt="otv dashboard lily theme">
-    <img class="thumbnail" src="../../src/otvdashboard-mobile.png" height=100 alt="otv dashboard mobile">
+    <img class="thumbnail" src="otvdashboard-syk.png" height=100 alt="otv dashboard syk theme">
+    <img class="thumbnail" src="/otvdashboard-lily.png" height=100 alt="otv dashboard lily theme">
+    <img class="thumbnail" src="/otvdashboard-mobile.png" height=100 alt="otv dashboard mobile">
 </div>
 A website that displays real-time livestream data from a group of digital content creators across YouTube and Twitch without needing to visit each website or subscribe to their push notifications.
 
