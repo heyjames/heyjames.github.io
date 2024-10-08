@@ -1,0 +1,9 @@
+---
+const { title, url, dates, type, language } = Astro.props;
+---
+<div class="cdt">
+    <div class="lc">{dates}</div>
+    <div class="mc">{type}</div>
+    <div class="mc-2">{language}</div>
+    <div class="rc"><a href={url}>{title}</a></div>
+</div>

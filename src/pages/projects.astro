@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectPost from '../components/ProjectPost.astro';
+const allPosts = await Astro.glob('../pages/projects/*.md');
+const sortedPosts = allPosts.sort((a, b) => b.frontmatter.id - a.frontmatter.id);
+const pageTitle = "";
+---
+<BaseLayout pageTitle={pageTitle}>
+    <div class="pt project-posts-container">
+    {sortedPosts.map(post => 
+        <ProjectPost 
+            url={post.url} 
+            title={post.frontmatter.title} 
+            dates={post.frontmatter.dates} 
+            type={post.frontmatter.type} 
+            language={post.frontmatter.language}
+        />)}
+    </div>
+</BaseLayout>

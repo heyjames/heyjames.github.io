@@ -1,0 +1,13 @@
+---
+const { platform, username } = Astro.props;
+---
+<a href={`https://www.${platform}.com/${platform === 'linkedin' ? 'in/' : ''}${username}`} target="_blank" rel="noopener noreferrer">{platform} <i class="fas fa-external-link-alt"></i></a>
+
+<style>
+    a {
+        padding: 0.5rem 1rem 0.4rem 1rem;
+        color: white;
+        background-color: #007BFF;
+        text-decoration: none;
+    }
+</style>

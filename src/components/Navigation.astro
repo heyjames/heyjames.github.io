@@ -1,0 +1,20 @@
+---
+---
+<div class="nav-links">
+    <a href="/heyjames.github.io/">Home</a>
+    <a href="/heyjames.github.io/projects/">Projects</a>
+    <!-- <a href="/blog/">Blog</a> -->
+</div>
+
+<script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // Loop through links and add 'active' class to the current page link
+    navLinks.forEach(link => {
+        if (link instanceof HTMLAnchorElement) {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        }
+    });
+</script>
