@@ -31,7 +31,7 @@ A website that displays real-time livestream data from a group of digital conten
 - Multiple light and dark visual themes
 
 ## Enjoyed
-I enjoyed arranging real-time data like the profile picture, live indicator, title, view count, and uptime in an easy to read user interface that works in multiple light and dark themes for desktop and mobile devices.
+I enjoyed arranging real-time data like the profile picture, live indicator, title, view count, and uptime in an easy-to-read user interface that works in multiple light and dark themes for desktop and mobile devices.
 
 ## Challenges
 - Refactoring React Class Components to React Hooks
