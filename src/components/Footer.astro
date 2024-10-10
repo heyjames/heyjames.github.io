@@ -5,11 +5,35 @@ import Social from './Social.astro';
     footer {
         display: flex;
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 20rem;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-items: end;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    footer a {
+        text-decoration: none;
     }
 </style>
 
 <footer>
-    <Social platform="github" username="heyjames" />
-    <Social platform="linkedin" username="heyjameslam" />
+    <div>
+        <ul>
+            <li><a href="https://www.github.com/heyjames" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-external-link-alt"></i></a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/heyjameslam" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fas fa-external-link-alt"></i></a></li>
+        </ul>
+    </div>
+    <!-- <Social platform="github" username="heyjames" /> -->
+    <!-- <Social platform="linkedin" username="heyjameslam" /> -->
 </footer>

@@ -5,12 +5,14 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 const pageTitle = "";
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <ul>
-        {allPosts.map(post => 
-        <BlogPost 
-            url={post.url} 
-            title={post.frontmatter.title} 
-            pubDate={post.frontmatter.pubDate}
-        />)}
-    </ul>
+    <div class="pt-lg">
+        <ul class="blog-row">
+            {allPosts.map(post => 
+            <BlogPost 
+                url={post.url} 
+                title={post.frontmatter.title} 
+                pubDate={post.frontmatter.pubDate}
+            />)}
+        </ul>
+    </div>
 </BaseLayout>
