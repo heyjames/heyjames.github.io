@@ -27,6 +27,10 @@ tags: []
         <img class="thumbnail" src="/images/after-helper-public-dark.png" height=250 alt="After" />
         <div class="image-caption-center">After</div>
     </div>
+    <div>
+        <img class="thumbnail" src="/images/cassandra-admin-view.png" height=250 alt="After" />
+        <div class="image-caption-center">Admin view with player search</div>
+    </div>
 </div>
 
 This script uses the [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) extension to add quality-of-life features to the Insurgency: Sandstorm tactical community website [Confluvium Gaming](http://cassandra.confluvium.net/).
