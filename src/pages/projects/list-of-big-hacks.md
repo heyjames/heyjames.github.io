@@ -17,7 +17,7 @@ tags: []
 <div class="image-container pt pb">
     <img src="/images/listofbighacks-01.jpg" />
 </div>
-Inspired by <a href="https://blackfridaydeathcount.com/" target="_blank" rel="noopener noreferrer">Black Friday Death Count</a> <i class="fas fa-external-link-alt"></i> and excitement in web development, I created a website that listed big hacking events. I learned to purchase and setup a domain and use Google App Engine to host the website.
+I created a website that listed big hacking events. I learned to purchase and setup a domain and use Google App Engine to host the website.
 
 ## Tools
 - Google App Engine
