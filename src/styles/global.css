@@ -133,6 +133,14 @@ a:hover {
     max-width: 600px;
 }
 
+.image-container-md {
+  max-width: 600px;
+}
+
+.image-container-md img {
+  width: 100%;
+}
+
 .image-caption-center {
     display: flex;
     justify-content: center;
