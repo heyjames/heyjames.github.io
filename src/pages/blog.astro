@@ -7,7 +7,12 @@ const pageTitle = "";
 <BaseLayout pageTitle={pageTitle}>
     <div class="pt-lg">
         <ul class="blog-row">
-            {allPosts.map(post => 
+            {allPosts
+            .sort((a, b) => 
+                new Date(b.frontmatter.pubDate).getTime() - 
+                new Date(a.frontmatter.pubDate).getTime()
+            )
+            .map(post => 
             <BlogPost 
                 url={post.url} 
                 title={post.frontmatter.title} 
