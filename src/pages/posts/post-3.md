@@ -14,7 +14,7 @@ tags: []
 ## Overview
 After `git push`, you may see this message below. This guide creates a branch to update NPM and Astro, verifies the website is working, merges the changes, and pushes the new changes to the remote repo.
 
-> GitHub found _ vulnerabilities on <USERNAME.github.io>'s default branch (_ high, _ moderate, _ low). To find out more, visit: https://github.com/USERNAME/USERNAME.github.io/security/dependabot
+> GitHub found _ vulnerabilities on <USERNAME.github.io>'s default branch (_ high, _ moderate, _ low). To find out more, visit: `https://github.com/<USERNAME>/<USERNAME>.github.io/security/dependabot`
 
 ## Quick Reminder
 ```bash
