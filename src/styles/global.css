@@ -49,6 +49,10 @@ a:hover {
     text-decoration: none;
 }
 
+pre {
+    padding: 20px;
+}
+
 .dark a {
     color: #ffa700;
 }
@@ -156,30 +160,30 @@ a:hover {
     text-align: right;
 }
 
-.projects-row {
+.custom-row {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10px;
 }
 
-.projects-column {
+.custom-column {
     flex: 0 0 auto;
     text-align: left;
 }
 
-.projects-col-1 {
+.custom-col-1 {
     min-width: 190px;
 }
 
-.projects-col-2 {
+.custom-col-2 {
     min-width: 120px;
 }
 
-.projects-col-3 {
+.custom-col-3 {
     min-width: 100px;
 }
 
-.projects-col-4 {
+.custom-col-4 {
     min-width: 310px;
 }
 
@@ -195,15 +199,19 @@ a:hover {
         left: 74px;
     }
 
-    .projects-row {
+    .custom-row {
         display: flex;
         padding-bottom: 24px;
         flex-wrap: wrap-reverse;
     }
     
-    .projects-column {
+    .custom-column {
         flex: 0 0 100%;
         text-align: left;
+    }
+
+    .dim {
+        filter: brightness(0.7);
     }
 }
 

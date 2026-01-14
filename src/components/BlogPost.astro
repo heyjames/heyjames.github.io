@@ -1,4 +1,7 @@
 ---
 const { title, url, pubDate } = Astro.props;
 ---
-<div>{pubDate} - <a href={url}>{title}</div>
+<div class="custom-row">
+    <div class="dim custom-column custom-col-2">{pubDate}</div>
+    <div class="custom-column custom-col-1"><a href={url}>{title}</div>
+</div>
