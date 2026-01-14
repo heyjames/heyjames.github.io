@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Fixing The Struggle of Continuing Where I Left Off'
+title: 'A better way to continue where you left off'
 pubDate: '2024-10-09'
 description: ''
 author: ''

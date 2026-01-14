@@ -23,7 +23,7 @@ Use the **Tab** key to highlight the **\<Ok\>** or **\<Cancel\>** buttons in Clo
 
 ### Begin
 1. Boot the Clonezilla Live USB
-    <div class="image-container-md"><div class="image-container-md"><img src="/images/post-2/1.jpg"></div>
+    <div class="image-container-md"><img src="/images/post-2/1.jpg"></div>
 2. At the GRUB boot menu, select `Clonezilla live (VGA 800x600)`
 3. Which language do you prefer:
 

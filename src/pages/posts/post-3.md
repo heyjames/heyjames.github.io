@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to update Astro vulnerabilities'
-pubDate: '2026-01-08'
+pubDate: '2026-01-14'
 description: ''
 author: ''
 image:
