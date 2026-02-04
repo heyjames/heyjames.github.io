@@ -370,8 +370,8 @@ I recommend Firefox or a fork since you can set the proxy settings to affect onl
 ### (Optional) Save login credentials
 If it is not available, verify **Ask to save passwords** is enabled in Firefox settings and manually create a new saved password. It will not recognize it if you restart the browser, but it should prompt you to save it. Then delete your manually entered entry. I have had issues where it did not prompt me despite being enabled. It might be because you need to create a entry or use the entry below:
 
-| Field           | Value                                    |
-|-----------------|------------------------------------------|
-| Website address | `moz-proxy://<YOUR_VPS_IP_ADDRESS>:3128` |
-| Username        | `<USERNAME>`                             |
-| Password        | `<PASSWORD>`                             |
+| Field           | Value                                      |
+|-----------------|--------------------------------------------|
+| Website address | moz-proxy://<br><YOUR_VPS_IP_ADDRESS>:3128 |
+| Username        | `<USERNAME>`                               |
+| Password        | `<PASSWORD>`                               |

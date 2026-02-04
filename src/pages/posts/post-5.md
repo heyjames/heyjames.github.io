@@ -150,7 +150,11 @@ Before selecting **Finish**:
 ## Virtualized hardware details (Windows 11)
 ### Overview
 This ensures the Windows 11 Secure Boot requirement:
-- Firmware: "UEFI x86_64: /usr/share/edk2/ovmf/OVMF_CODE_4M.secboot.qcow2"
+
+Firmware:
+```
+UEFI x86_64: /usr/share/edk2/ovmf/OVMF_CODE_4M.secboot.qcow2
+```
 
 ### Boot Options
 - Check **SATA CDROM 1**
@@ -212,7 +216,11 @@ Before selecting **Finish**:
 ## Virtualized hardware details (Kali)
 ### Overview
 To use without Secure Boot:
-- Firmware: "UEFI x86_64: /usr/share/edk2/ovmf/OVMF_CODE_4M.qcow2"
+
+Firmware:
+```
+UEFI x86_64: /usr/share/edk2/ovmf/OVMF_CODE_4M.qcow2
+```
 
 ### Boot Options
 - Check **SATA CDROM 1**
