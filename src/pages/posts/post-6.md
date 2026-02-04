@@ -1,3 +1,16 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Guide to install OpenRGB on Bazzite'
+pubDate: '2026-02-04'
+description: ''
+author: ''
+image:
+    url: ''
+    alt: ''
+    width: ''
+tags: []
+---
+
 # How to install OpenRGB on Bazzite
 
 The first option uses the Flatpak version and can only auto-start after login. The second option uses Bazzite's web application (uses `ujust install-openrgb`) and can auto-start at the login screen. Auto-starting at the login screen is useful for issuing a wake-on-lan request without needing to connect via remote desktop to login.
