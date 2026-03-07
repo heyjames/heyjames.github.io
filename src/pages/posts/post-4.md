@@ -45,11 +45,12 @@ nano /etc/squid/squid.conf
 
 1. Search (Mac: Control + W) for `http_access deny all`
 2. Add two lines before `http_access deny all`
+3. Don't add `http_access allow authenticated` until later if you decide to use a username and password
 
 The section looks like this when added (note: the **order is important**):
 ```ini
 acl myip src <YOUR_IP_ADDRESS> # add this
-http_access allow authenticated # add this (if you want authentication)
+http_access allow authenticated # add this later (if you want authentication)
 http_access allow myip # add this
 http_access deny all
 ```
@@ -162,6 +163,26 @@ This is what `ufw status numbered` looks like at the end:
 [ 6] 3128 (v6)                  DENY IN     Anywhere (v6)             
 [ 7] 5355 (v6)                  DENY IN     Anywhere (v6)             
 [ 8] 22/tcp (v6)                DENY IN     Anywhere (v6)
+```
+
+### Connection timed out? Verify order
+If you tried to connect via SSH and it timed out, your "22/tcp DENY IN from Anywhere" is probably above "22/tcp ALLOW IN from <YOUR_IP_ADDRESS>".
+
+For example, this will not allow you to connect because the rules are evaluated from top to bottom:
+```bash
+     To                         Action      From
+     --                         ------      ----    
+[ 4] 22/tcp                     DENY IN     Anywhere                  
+[ 5] 22/tcp                     ALLOW IN    <YOUR_IP_ADDRESS>         
+```
+
+Your order may be different, but in this case, I execute two commands and then verify the order:
+```bash
+# Delete entry
+ufw delete 5
+
+# Re-add entry above position 4
+ufw insert 4 allow from <YOUR_IP_ADDRESS> to any port 22 proto tcp
 ```
 
 ## General network security configuration
@@ -314,14 +335,14 @@ tcp           LISTEN         0               256                                
     systemctl reload ssh
     ```
 
-### (Optional) Create an SSH key
+### (Optional) Create SSH keys to connect without entering a password
 - Belongs to your private SSH key (on your Mac)
 - Used locally when you unlock your key before connecting
 - Protects your key if your laptop is stolen
 - (Optional) You can leave an empty passphrase when creating the key (for convenience, but less secure)
 
 ```bash
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_<YOUR_CUSTOM_NAME> -C "<YOUR_CUSTOM_DESCRIPTION/comment>"
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_[YOUR_CUSTOM_NAME] -C "[YOUR_CUSTOM_DESCRIPTION]"
 ```
 
 Create the path in your user directory first. You may need to create an empty file called `authorized_keys` in `.ssh`:
@@ -338,12 +359,12 @@ sudo chmod 600 /home/<SUDO_USER>/.ssh/authorized_keys
 
 Then use this command to copy it from your local PC to the VPS server. Note: the `.pub` is the public one to copy:
 ```bash
-ssh-copy-id -i ~/.ssh/id_ed25519_<YOUR_CUSTOM_NAME>.pub user@<YOUR_VPS_IP_ADDRESS>
+ssh-copy-id -i ~/.ssh/id_ed25519_[YOUR_CUSTOM_NAME].pub user@<YOUR_VPS_IP_ADDRESS>
 ```
 
-Connect to it using the public key on your local device:
+Connect to it using the private key on your local device:
 ```bash
-ssh -i ~/.ssh/id_ed25519_<YOUR_CUSTOM_NAME>.pub user@<YOUR_VPS_IP_ADDRESS>>
+ssh -i ~/.ssh/id_ed25519_[YOUR_CUSTOM_NAME] user@<YOUR_VPS_IP_ADDRESS>
 ```
 
 If you want it to prompt for your private key passphrase when you use `ssh user@<YOUR_VPS_IP_ADDRESS>`, add this:
@@ -354,24 +375,24 @@ nano ~/.ssh/config
 ```ini
 Host <YOUR_VPS_IP_ADDRESS>
   User <username>
-  IdentityFile ~/.ssh/id_ed25519_<YOUR_CUSTOM_NAME>
+  IdentityFile ~/.ssh/id_ed25519_[YOUR_CUSTOM_NAME]
   IdentitiesOnly yes
 ```
 
 ## Browser Configuration
 ### Network Settings
-I recommend Firefox or a fork since you can set the proxy settings to affect only the one browser instead of your operating system's network settings. I prefer a portable version of LibreWolf or Waterfox.
+I recommend Firefox or a fork (Waterfox, LibreWolf) since you can set the proxy settings to affect only that browser instead of all traffic on the computer if you set it in your operating system's network settings.
 
 1. Firefox > Settings > Network Settings (scroll all the way to the bottom of **General**)
 2. Select Manual proxy configuration
-3. Enable checkbox for "Also use this proxy for HTTPS" if available
-4. Select OK
+3. Paste VPS IP address in the "HTTP Proxy" input box
+4. Paste "3128" in the "Port" input box
+5. Enable the checkbox for "Also use this proxy for HTTPS"
+6. Enable the checkbox for "Do not prompt for authentication if password is saved" if you want
+7. Select OK
+
+### Important Note
+There is no encryption between you and the VPS
 
 ### (Optional) Save login credentials
-If it is not available, verify **Ask to save passwords** is enabled in Firefox settings and manually create a new saved password. It will not recognize it if you restart the browser, but it should prompt you to save it. Then delete your manually entered entry. I have had issues where it did not prompt me despite being enabled. It might be because you need to create a entry or use the entry below:
-
-| Field           | Value                                      |
-|-----------------|--------------------------------------------|
-| Website address | moz-proxy://<br><YOUR_VPS_IP_ADDRESS>:3128 |
-| Username        | `<USERNAME>`                               |
-| Password        | `<PASSWORD>`                               |
+If it is not available, verify **Ask to save passwords** is enabled in Firefox settings. I have experienced issues where it did not prompt me to save. Try restarting the browser, and when it asks you for the credentials the first time, cancel or close it. Then visit a website, and it will prompt you again, hopefully with the checkbox or pop-up in the address bar.
