@@ -11,7 +11,7 @@ interface MarkdownPost {
     language: string;
   };
 }
-const allPosts = Object.values(import.meta.glob<MarkdownPost>('../pages/posts/*.md', { eager: true }));
+const allPosts = Object.values(import.meta.glob<MarkdownPost>('../pages/projects/*.md', { eager: true }));
 const sortedPosts = allPosts.sort((a, b) => b.frontmatter.id - a.frontmatter.id);
 const pageTitle = "";
 ---
