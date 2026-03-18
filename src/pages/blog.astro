@@ -6,6 +6,7 @@ interface MarkdownPost {
   frontmatter: {
     title: string;
     pubDate: string;
+    type: string;
   };
 }
 const allPosts = Object.values(import.meta.glob<MarkdownPost>('../pages/posts/*.md', { eager: true }));
@@ -24,6 +25,7 @@ const pageTitle = "";
                 url={post.url} 
                 title={post.frontmatter.title} 
                 pubDate={post.frontmatter.pubDate}
+                type={post.frontmatter.type} 
             />)}
         </ul>
     </div>

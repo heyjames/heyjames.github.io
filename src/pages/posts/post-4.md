@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to set up a proxy on Debian 11'
 pubDate: '2026-01-21'
 description: ''
+type: 'Networking'
 author: ''
 image:
     url: ''

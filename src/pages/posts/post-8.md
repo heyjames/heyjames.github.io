@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to use Wake-on-LAN with a Raspberry Pi'
 pubDate: '2026-02-18'
 description: ''
+type: 'Networking'
 author: ''
 image:
     url: ''

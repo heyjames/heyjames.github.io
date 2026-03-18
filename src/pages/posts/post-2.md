@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to backup a drive in Clonezilla'
 pubDate: '2026-01-07'
 description: ''
+type: 'Backup'
 author: ''
 image:
     url: ''

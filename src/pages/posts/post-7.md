@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to install CoolerControl on Bazzite'
 pubDate: '2026-02-11'
 description: ''
+type: 'Linux'
 author: ''
 image:
     url: ''

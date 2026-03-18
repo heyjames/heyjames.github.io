@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Proxmox Notes'
 pubDate: '2026-03-18'
 description: ''
+type: 'Virtualization'
 author: ''
 image:
     url: ''
@@ -71,5 +72,3 @@ Verify "Firewall" is checked.
 #### Add firewall rules on the VM
 Order typically matters.
 <div class="image-container-md"><img src="/images/post-10/5.png"></div>
-
-

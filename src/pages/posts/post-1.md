@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'A better way to continue where you left off'
 pubDate: '2024-10-09'
 description: ''
+type: 'Self'
 author: ''
 image:
     url: ''

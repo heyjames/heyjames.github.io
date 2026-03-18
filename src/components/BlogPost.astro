@@ -1,7 +1,8 @@
 ---
-const { title, url, pubDate } = Astro.props;
+const { title, url, pubDate, type } = Astro.props;
 ---
 <div class="custom-row">
     <div class="dim custom-column custom-col-2">{pubDate}</div>
+    <div class="dim custom-column custom-col-1">{type}</div>
     <div class="custom-column custom-col-1"><a href={url}>{title}</div>
 </div>

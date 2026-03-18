@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'John the Ripper Notes'
 pubDate: '2026-03-12'
 description: ''
+type: 'Cybersecurity'
 author: ''
 image:
     url: ''

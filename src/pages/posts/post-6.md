@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to install OpenRGB on Bazzite'
 pubDate: '2026-02-04'
 description: ''
+type: 'Linux'
 author: ''
 image:
     url: ''

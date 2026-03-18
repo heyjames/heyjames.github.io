@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Guide to set up virtual machines on Fedora'
 pubDate: '2026-01-28'
 description: ''
+type: 'Virtualization'
 author: ''
 image:
     url: ''
