@@ -1,0 +1,17 @@
+---
+const { headings } = Astro.props;
+---
+
+{headings.length > 0 && (<h2>Table of Contents</h2>
+
+<ul>
+    {headings
+        .filter(h => h.depth <= 3)
+        .map(h => (
+        <li style={`margin-left: ${(h.depth - 1) * 3}rem`}>
+            <a href={`#${h.slug}`}>{h.text}</a>
+        </li>
+        ))
+    }
+</ul>)
+}
