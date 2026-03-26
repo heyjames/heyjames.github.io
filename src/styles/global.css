@@ -21,6 +21,10 @@ html.dark {
 .dark .nav-links a.active {
     color: #ffffff;
 }
+
+.dark h2 {
+    border-bottom: 2px solid white;
+}
   
 body {
     margin: 0 auto;
@@ -37,6 +41,11 @@ body {
 h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    border-bottom: 1px solid black;
 }
 
 a {
@@ -298,5 +307,5 @@ code:not(:has(*)) {
 	color: #22d214;
 	border: 1px solid #b6b6b6b0;
 	border-radius: 4px;
-	padding: 2px;
+	padding: 2px 8px;
 }
