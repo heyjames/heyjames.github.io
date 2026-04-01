@@ -100,7 +100,7 @@ Add convenient Toolbar Actions:
 5. Add **Places** next to View Settings
 6. Add **New Tab** and **New Window** to the right of Split
 
-# Virtualization
+## Virtual Machine Manager
 Reference https://docs.fedoraproject.org/en-US/quick-docs/virtualization-getting-started/
 
 ```bash
@@ -254,7 +254,7 @@ Disable screensaver
 Disable automatic sleep and off
 - Display tab > Power Manager > Move **Put to sleep after** and **Switch off after** to the left until it says **Never**
 
-# Create a private network for the VMs
+## Create a private network for the VMs
 Go to the **Virtual Machine Manager** window
 
 Select **Edit** > **Connection Details**
