@@ -35,7 +35,7 @@ nmap -p0-65535 172.17.0.2
 nmap 172.17.0.2 --script vuln -p 6667
 ```
 
-# Open a connection with Netcat
+## Open a connection with Netcat
 ```bash
 nc 172.17.0.2 6667
 ```
