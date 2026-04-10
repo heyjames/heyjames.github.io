@@ -51,11 +51,19 @@ Run Command Prompt as Administrator
 ```powershell
 diskpart
 list disk
-select disk <1|2|3...>
+select Disk <1|2|3...>
+
+# Show disks again and look for the asterisk to confirm the correct disk is selected 
+list disk
+
+# Open This PC to double-check you have selected the desired disk
+
 clean
-# Convert to gpt
+
+# (Optional) Convert to gpt
 #  - gpt (recommended for modern systems, NVMe drives, and UEFI)
 #  - mbr (only for older BIOS-based systems or drives <2TB | pre-UEFI, pre-2012)
+convert <gpt|mbr>
 
 # Initialize for regular use
 create partition primary
