@@ -48,7 +48,7 @@ The website was unfortunately designed to unintentionally cause a user to includ
 - (Deprecated) Copy SID button
 
 ## Special Features for moderation (closed source)
-- Player database
+- Player database (**1238 player entries have been added as of 2026**)
   - Assign different colors to indicate an admin, moderator, kicked, banned, or concerning player
   - Add comments about a player
   - Use custom or original Steam names or both (e.g., disguising as moderator)

@@ -118,6 +118,8 @@ To launch the desktop environment from the Terminal, type `startx`.
     > Sending magic packet to 255.255.255.255:9 with <MAC_ADDRESS>
 
 2.  **Method A (recommended)**
+    
+    Update: (2026-04-24) Option 1, Method A has been 100% reliable.
 
     Use the iPhone to relay an SSH wake command to the Raspberry Pi. You can tap on the icon from the home screen or say "Hey Siri, <Wake Dell Pro Mini | title of icon>".
     #### Add an icon to the home screen to wake the PC
