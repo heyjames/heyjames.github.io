@@ -25,7 +25,7 @@ Simply tap on an app shortcut on the iPhone's home screen to wake the PC and the
 - Dell Mini PC
 - Termius or other iOS SSH app
 
-## Dell Pro Mini PC
+## Dell Mini PC
 ### Get the Ethernet MAC Address in Windows
 1. Open **Command Prompt**
 2. Type `ipconfig /all`
@@ -43,11 +43,16 @@ Simply tap on an app shortcut on the iPhone's home screen to wake the PC and the
     - Wake On Magic Packet From S5 = Enabled
     - Wake on Pattern Match = Disabled
 
-### Configure the BIOS
+### Configure the BIOS (Dell Pro Mini)
 - Power
     - Deep Sleep Control = Disabled
 - System Management
     - Wake on LAN/WLAN = LAN Only, WLAN Only, LAN or WLAN
+
+### Configure the BIOS (Dell OptiPlex 7060)
+- Power Management
+    - Deep Sleep Control = Disabled
+    - Wake on LAN/WLAN = LAN Only, WLAN Only, LAN or WAN, LAN with PXE Boot
 
 ## Raspberry Pi
 ### Set a static IP
