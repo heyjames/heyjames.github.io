@@ -13,7 +13,9 @@ tags: []
 ---
 
 ### Documentation
+```
 https://www.openwall.com/john/doc/
+```
 
 ### Install (Ubuntu)
 ```bash

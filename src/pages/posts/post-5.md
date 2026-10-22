@@ -59,16 +59,16 @@ Display & Monitor
 - Uncheck top-left corner to disable the "hot corner"
 
 Mouse & Touchpad > Touchpad
-- Pointer speed: 0.40
-- Check **Enable pointer acceleration**
+- Pointer speed: 0.60
+- Check **Disable pointer acceleration**
 
 Mouse > SYNA8008:00 06CB:CE58 Mouse
-- Pointer speed: 0.00
-- Check **Enable pointer acceleration**
+- Pointer speed: 0.20
+- Check **Disable pointer acceleration**
 
 Mouse > TPPS/2 Elan TrackPoint
-- Pointer speed: 0.40
-- Uncheck **Enable pointer acceleration**
+- Pointer speed: 0.50
+- Uncheck **Disable pointer acceleration**
 
 Wallpaper
 - Plain Color: Black
@@ -101,7 +101,10 @@ Add convenient Toolbar Actions:
 6. Add **New Tab** and **New Window** to the right of Split
 
 ## Virtual Machine Manager
-Reference https://docs.fedoraproject.org/en-US/quick-docs/virtualization-getting-started/
+Reference
+```
+https://docs.fedoraproject.org/en-US/quick-docs/virtualization-getting-started/
+```
 
 ```bash
 # Check CPU virtualization support

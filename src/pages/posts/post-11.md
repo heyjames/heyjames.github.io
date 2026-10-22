@@ -15,16 +15,23 @@ tags: []
 ## Disable web search from Start menu
 The Start menu in Windows 11 will attempt to search the web before any local results. If it thinks it has access to the internet but only has LAN, entering a search causes it to hang for a while.
 
-Source (user: Limitless Technology): https://learn.microsoft.com/en-us/answers/questions/782951/how-do-you-disable-the-search-box-from-showing-web
+Source (user: Limitless Technology)
+```
+https://learn.microsoft.com/en-us/answers/questions/782951/how-do-you-disable-the-search-box-from-showing-web
+```
 
 1. Press `Windows Key + R` to launch **Run**
 2. Type `regedit`
-3. Navigate to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows`
+3. Navigate to
+    ```
+    HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows
+    ```
 4. Right-click the Windows key and select New > Key
 5. Name it `Explorer`
 6. Right-click the newly created Explorer key and select New > DWORD (32-bit) Value
 7. Name the DWORD `DisableSearchBoxSuggestions`
-8. Double-click the newly created DWORD and set the value from 0 to 1. Click OK and restart (required)
+8. Double-click the newly created DWORD and set the value from 0 to 1. Click OK
+9. Restart Windows Explorer from the Task Manager or restart the computer
 
 If you want to change it back and add web results again, go back and change the DWORD value for DisableSearchBoxSuggestions to 0 or delete the keys you created originally.
 
@@ -35,7 +42,10 @@ No more clicking "Show more options". Enough said.
 
 1. Press `Windows Key + R` to launch **Run**
 2. Type `regedit`
-3. Navigate to `Computer\HKEY_CURRENT_USER\Software\Classes\CLSID`
+3. Navigate to
+    ```
+    Computer\HKEY_CURRENT_USER\Software\Classes\CLSID
+    ```
 4. Right-click > New > Key
 5. Enter `{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}`
 6. Right-click > New > Key

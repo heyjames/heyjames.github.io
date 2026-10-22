@@ -16,7 +16,10 @@ tags: []
 
 1. Turn off BitLocker
     - Search for BitLocker from the Start menu
-2. Visit https://pg.asrock.com/mb/AMD/B850I%20Lightning%20WiFi/index.asp#BIOS to download the BIOS
+2. Visit this link to download the BIOS
+    ```
+    https://pg.asrock.com/mb/AMD/B850I%20Lightning%20WiFi/index.asp#BIOS
+    ```
 3. Open the PDF with instructions from the AsRock website to update BIOS
 4. Format the USB drive (FAT32, GPT if ok) and copy the `.ROM` file to the root directory
 5. Turn off PC
